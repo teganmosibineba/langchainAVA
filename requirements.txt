@@ -1,0 +1,31 @@
+# requirements.txt
+
+# Core App & LangChain
+streamlit==1.44.0 # Or 1.44.1 as installed by Streamlit Cloud
+langchain==0.3.23
+langchain-core==0.3.51
+langchain-community==0.3.21 # <-- THE MISSING PACKAGE!
+langchain-groq==0.3.1
+langchain-huggingface==0.1.2
+# langchain-google-genai==2.0.10 # Include if you use Google Generative AI
+python-dotenv==1.1.0
+langchain-text-splitters==0.3.8
+
+# Embeddings & Vector Store
+faiss-cpu==1.10.0 # Or just faiss-cpu if you prefer latest
+sentence-transformers==4.0.1 # Or just sentence-transformers
+tiktoken==0.9.0 # Or just tiktoken
+
+# Document Loaders (Include only those you use)
+pypdf==5.4.0 # Or just pypdf
+unstructured # Add version pinning if desired, e.g., unstructured==0.17.2
+python-docx # Add version pinning if desired, e.g., python-docx==1.1.2
+python-pptx # Add version pinning if desired, e.g., python-pptx==1.0.2
+# python-magic # Often needed by Unstructured, add if necessary
+# lxml # Often needed by Unstructured, add if necessary
+
+# Web Search
+duckduckgo-search # Add version pinning if desired
+
+# Optional/Transitive (Usually not needed explicitly unless resolving conflicts)
+# pillow
